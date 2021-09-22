@@ -12,7 +12,7 @@ function AppDemo() {
         )}
       />
       <PropsRenderPattern
-        render={(x, y) => <MouseHover count={x} incrementCount={y} />}
+        render={(x,y) => <MouseHover count={x} incrementCount={y} />}
       />
     </React.Fragment>
   );
