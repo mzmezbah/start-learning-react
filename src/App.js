@@ -1,15 +1,11 @@
 import React from "react";
 import "./App.css";
-import UseState from "./Components/Hooks/UseState";
-import UseStateFour from "./Components/Hooks/UseStateFour";
-import UseStateThree from "./Components/Hooks/UseStateThree";
-import UseStateTwo from "./Components/Hooks/UseStateTwo";
-import AppDemo from "./Components/Http/AppDemo";
+import EffectHookTwo from "./Components/Hooks/useEffect/EffectHookTwo";
 
 function App() {
   return (
     <div className={'App'}>
-      <UseStateFour />
+      <EffectHookTwo />
     </div>
   )
 }
