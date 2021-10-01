@@ -1,11 +1,12 @@
 import React from "react";
 import "./App.css";
-import EffectHookTwo from "./Components/Hooks/useEffect/EffectHookTwo";
+import Parent from "./Components/Hooks/useContext/Parent";
+
 
 function App() {
   return (
     <div className={'App'}>
-      <EffectHookTwo />
+      <Parent />
     </div>
   )
 }
