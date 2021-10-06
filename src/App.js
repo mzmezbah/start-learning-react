@@ -1,12 +1,12 @@
 import React from "react";
 import "./App.css";
-import ReduceThree from "./Components/Hooks/useReducer/ReduceThree";
+import AppDemo from "./Components/Hooks/useCallback&useMemo/AppDemo";
 
 
 function App() {
   return (
     <div className={'App'}>
-      <ReduceThree />
+      <AppDemo />
     </div>
   )
 }

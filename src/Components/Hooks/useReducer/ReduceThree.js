@@ -38,6 +38,7 @@ function ReduceThree() {
         <button onClick={() => dispatchOne({ type: "increment", value: 5 })}>
           Increment - 5
         </button>
+        <button onClick={() => dispatchOne({ type: "reset" })}>Reset</button>
       </div>
       <div>
         <button onClick={() => dispatchTwo({ type: "increment", value: 1 })}>
@@ -49,8 +50,8 @@ function ReduceThree() {
         <button onClick={() => dispatchTwo({ type: "decrement", value: 5 })}>
           Decrement - 5
         </button>
+        <button onClick={() => dispatchTwo({ type: "reset" })}>Reset</button>
       </div>
-      <button onClick={() => dispatchOne({ type: "reset" })}>Reset</button>
     </div>
   );
 }
