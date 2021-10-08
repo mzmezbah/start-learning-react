@@ -2,9 +2,9 @@ import React, { Component } from 'react'
 
 //By this Refs feature we can access any dom node directly..for this we need to follow under this steps..
 //1.we need to declare React.createRef() in the constructor..then write the this property in the html tags by using 'ref=' attribute..by this name you can access this tags like under...
-//here this refs attribute  property gives us a current object like under..
+//here this refs attribute  property gives us a 'current' object like under..
 
-// we  can also use this refs feature to access node another way ..its easier &
+// we  can also use this refs feature to access node another way ..its easier 
 
 export class RefsDemo extends Component {
 

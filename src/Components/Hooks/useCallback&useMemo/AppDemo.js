@@ -14,7 +14,7 @@ function AppDemo() {
   const [age, setAge] = useState(25);
 
   const incrementOne = useCallback(() => {
-    //here us no dependencies so this fn call only once.
+    //here we use no dependencies so this fn call only once.
     //here prevCount is a part of setCount method
     setCount((prevCount) => prevCount + 1);
   }, []);
@@ -24,7 +24,7 @@ function AppDemo() {
     setAge(age + 5);
   }, [age]);
 
-  //here we use useMemo() hook..its works like useCallback..but it contain data which is return the cbFn and its stored into the variable like 'isEven' & it cannot change unless the dependencies change..
+  //here we use useMemo() hook..its works like useCallback..but it contain data which is return the cbFn and its stored into the variable like 'isEven' in here & it cannot change unless the dependencies change..
 
   //so here it saves the unnecessary loading time of while loop in  every rendering & render the cached value unless change the dependencies...
 
@@ -37,7 +37,7 @@ function AppDemo() {
 
   return (
     <div>
-      <Title Click="click" count="This" />
+      <Title Click="click" prop="Button" />
       <Count text={"Count"} count={count} />
       <ButtonOne handler={incrementOne}>Increment Count</ButtonOne>
       <h3> {isEven ? "Even" : "Odd"}</h3>

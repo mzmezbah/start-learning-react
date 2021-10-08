@@ -58,9 +58,7 @@ function FetchingDataTwo() {
   },[newState]);
 
   const submitButton = (e) => {
-    e.preventDefault()
-    dispatch({ type: "", submitId: inputRef.current.value });
-    inputRef.current.value=""
+    dispatch({type:'',submitId:inputRef.current.value})
   };
 
   return (
@@ -76,4 +74,4 @@ function FetchingDataTwo() {
   );
 }
 
-export default FetchingDataTwo;
+export default React.memo(FetchingDataTwo);
